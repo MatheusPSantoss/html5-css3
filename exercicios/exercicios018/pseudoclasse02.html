@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        div > p {
+            display: none;
+
+        }
+        div:hover > p {
+            display: block;
+            color: blue;
+            background-color: black;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+        
+        a:active {
+            color: yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse no texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    <h1>Teste link visitado</h1>
+    <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank"><p>Youtube.com</p></a>
+
+
+</body>
+</html>
